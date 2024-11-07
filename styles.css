@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #184ddf, #b0bce4); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    background: rgba(161, 208, 230, 0.9); 
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(57, 106, 240, 0.15);
+    backdrop-filter: blur(10px); /
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    color: #5325d1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+  }
+  
+  label {
+    font-size: 1rem;
+    color: #4272f5;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  
+  input, select {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #83a4a5;
+    border-radius: 8px;
+    background-color: #bae5eb;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+  
+  input:focus, select:focus {
+    border-color: #333ed6;
+    outline: none;
+    box-shadow: 0 0 10px rgba(54, 38, 141, 0.3); 
+  }
+  
+  button {
+    padding: 15px;
+    background-color: #3a2bc9;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1454df; 
+  }
+  
+  button:active {
+    background-color: #2652b1;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #28a745;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    label {
+      font-size: 0.9rem;
+    }
+  
+    input, select, button {
+      font-size: 0.95rem;
+    }
+  }
+  

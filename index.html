@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Reserva de Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Reserva de Hotel</h1>
+    <form id="hotel-form">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+      <label for="data-chegada">Data de Chegada:</label>
+      <input type="date" id="data-chegada" name="data_chegada" required>
+
+      <label for="data-saida">Data de Saída:</label>
+      <input type="date" id="data-saida" name="data_saida" required>
+
+      <label for="quarto">Tipo de Quarto:</label>
+      <select id="quarto" name="quarto" required>
+        <option value="single">Individual</option>
+        <option value="double">Duplo</option>
+        <option value="suite">Suíte</option>
+      </select>
+
+      <button type="submit">Enviar Reserva</button>
+    </form>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
